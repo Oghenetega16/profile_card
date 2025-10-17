@@ -78,7 +78,7 @@ This project is part of the **HNG** program, implementing Stage 0: Building a Te
    ```
 
    **Option B: Using Direct Link (recommended)**
-  # Navigate to: http://localhost:8000
+  # Navigate to: (https://hng13-profilecard.netlify.app/)
 
 ## 💻 Usage
 
@@ -90,6 +90,7 @@ The profile card is contained in a folder with `index.html`, `styles.css`, `scri
 
 profile-card/
 │
+
 ├── image
     └── passport photo.jpg  
 ├── index.html          # Main HTML file
