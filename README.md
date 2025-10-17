@@ -90,7 +90,6 @@ The profile card is contained in a folder with `index.html`, `styles.css`, `scri
 
 profile-card/
 │
-
 ├── image
     └── passport photo.jpg  
 ├── index.html          # Main HTML file
