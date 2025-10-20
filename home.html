@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <article id="home" class="page active" data-testid="test-profile-card">
+        <div class="profile-card">
+        <header class="profile-header">
+            <figure class="profile-avatar">
+                <img src="./image//passport photo.jpg" alt="Oghenetega Sukuru profile photo" data-testid="test-user-avatar">
+            </figure>
+            <div class="profile-info">
+                <h1 class="profile-name" data-testid="test-user-name">Oghenetega Sukuru</h1>
+                <p class="profile-bio" data-testid="test-user-bio">
+                    Result focused frontend developer skilled in building accessible,
+                    reponsive, and performant web applications using modern tech stacks.
+                </p>
+                <div class="profile-time" data-testid="test-user-time" id="currentTime"></div>
+            </div>
+        </header>
+    
+        <nav aria-label="Social media links">
+            <ul class="social-links" data-testid="test-user-social-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/sukuruoghenetega" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter" aria-label="LinkedIn profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/oghenetega16" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-github" aria-label="GitHub profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/oghenet_e_g_a" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-linkedin" aria-label="Twitter profile">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    
+        <section class="profile-section">
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="profile-list" data-testid="test-user-hobbies">
+                <li>Photography</li>
+                <li>Movies</li>
+                <li>Travelling</li>
+                <li>Playing games</li>
+            </ul>
+        </section>
+    
+        <section class="profile-section">
+            <h2 class="section-title">Dislikes</h2>
+            <ul class="profile-list" data-testid="test-user-dislikes">
+                <li>Fight</li>
+                <li>Slow internet</li>
+                <li>Unnecessary meetings</li>
+            </ul>
+        </section>
+        </div>
+    </article>
+</body>
+</html>

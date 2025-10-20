@@ -14,6 +14,67 @@ body {
     padding: 1rem;
 }
 
+nav.main-nav {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav.main-nav a {
+    padding: 0.75rem 1.5rem;
+    background: #f7fafc;
+    color: #2d3748;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+nav.main-nav a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+nav.main-nav a:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}
+
+nav.main-nav a.active {
+    background: #667eea;
+    color: white;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
 .profile-card {
     background: white;
     border-radius: 1rem;
@@ -133,11 +194,136 @@ body {
     outline-offset: 3px;
 }
 
-@media (min-width: 640px) {
-    .profile-card {
-        padding: 2.5rem;
-    }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.875rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    display: none;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+    border-color: #e53e3e;
+}
+
+.submit-button {
+    padding: 1rem 2rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+.submit-button:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 3px;
+}
+
+.submit-button:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.success-message {
+    padding: 1rem;
+    background: #c6f6d5;
+    color: #22543d;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.success-message.visible {
+    display: block;
+}
+
+.about-section {
+    margin-bottom: 2rem;
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #667eea;
+}
+
+.about-section h3 {
+    font-size: 1.25rem;
+    color: #4a5568;
+    margin-bottom: 0.75rem;
+}
+
+.about-section p,
+.about-section ul {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.about-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
     .profile-header {
         flex-direction: row;
         text-align: left;
