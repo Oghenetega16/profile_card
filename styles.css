@@ -15,6 +15,12 @@ body {
     padding: 1rem;
 }
 
+h1 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
 nav.main-nav {
     max-width: 800px;
     margin: 0 auto 2rem;
@@ -44,19 +50,28 @@ nav.main-nav a {
 }
 
 nav.main-nav a:hover {
-    background: #667eea;
+    background: #B77466;
     color: white;
     transform: translateY(-2px);
 }
 
 nav.main-nav a:focus {
-    outline: 3px solid #667eea;
+    outline: 3px solid #B77466;
     outline-offset: 2px;
 }
 
 nav.main-nav a.active {
-    background: #667eea;
+    background: #957C62;
     color: white;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
 }
 
 .page {
@@ -67,7 +82,7 @@ nav.main-nav a.active {
     display: block;
 }
 
-.profile-card {
+.profile-card, .contact-card, .about-card {
     background: white;
     border-radius: 1rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -190,6 +205,8 @@ nav.main-nav a.active {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 500px;
+    width: 100%;
 }
 
 .form-group {
@@ -202,6 +219,10 @@ nav.main-nav a.active {
     font-weight: 600;
     color: #2d3748;
     font-size: 0.875rem;
+}
+
+.form-group label span {
+    color: red;
 }
 
 .form-group input,
@@ -217,7 +238,7 @@ nav.main-nav a.active {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #B77466;
 }
 
 .form-group textarea {
@@ -242,7 +263,7 @@ nav.main-nav a.active {
 
 .submit-button {
     padding: 1rem 2rem;
-    background: #667eea;
+    background: #957C62;
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -253,12 +274,12 @@ nav.main-nav a.active {
 }
 
 .submit-button:hover {
-    background: #764ba2;
+    background: #B77466;
     transform: translateY(-2px);
 }
 
 .submit-button:focus {
-    outline: 3px solid #667eea;
+    outline: 3px solid #B77466;
     outline-offset: 3px;
 }
 
@@ -291,7 +312,7 @@ nav.main-nav a.active {
     color: #2d3748;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #B77466;
 }
 
 .about-section h3 {
